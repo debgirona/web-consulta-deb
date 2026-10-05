@@ -1,0 +1,24 @@
+/* Tipografías alojadas en la propia web (sin conexión a servidores externos) */
+@font-face{font-family:'Newsreader';font-style:normal;font-weight:200 800;font-display:swap;src:url(fonts/newsreader-latin-ext-opsz-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Newsreader';font-style:normal;font-weight:200 800;font-display:swap;src:url(fonts/newsreader-latin-opsz-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Newsreader';font-style:italic;font-weight:200 800;font-display:swap;src:url(fonts/newsreader-latin-ext-opsz-italic.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Newsreader';font-style:italic;font-weight:200 800;font-display:swap;src:url(fonts/newsreader-latin-opsz-italic.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Hanken Grotesk';font-style:normal;font-weight:100 900;font-display:swap;src:url(fonts/hanken-grotesk-latin-ext-wght-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Hanken Grotesk';font-style:normal;font-weight:100 900;font-display:swap;src:url(fonts/hanken-grotesk-latin-wght-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+/* Aviso de cookies */
+.dpc{position:fixed;left:0;right:0;bottom:0;z-index:100;background:#FFFDFA;border-top:1px solid #E3DACE;box-shadow:0 -10px 34px rgba(46,42,38,.12);font-family:"Hanken Grotesk","Helvetica Neue",Helvetica,sans-serif;color:#2E2A26}
+.dpc-in{max-width:1180px;margin:0 auto;padding:18px clamp(16px,4vw,40px);display:flex;flex-wrap:wrap;gap:14px 30px;align-items:center;justify-content:space-between}
+.dpc-txt{flex:1 1 440px;font-size:15.5px;line-height:1.5;color:#453F39}
+.dpc-txt p{margin:0}
+.dpc-title{font-family:Newsreader,Georgia,serif;font-size:21px;line-height:1.2;color:#2E2A26;margin:0 0 5px!important}
+.dpc-btns{display:flex;gap:10px;flex:0 1 auto}
+.dpc-btn,.dpm-btn,.dpc-open{font-family:inherit;font-size:16px;font-weight:500;min-height:48px;padding:12px 28px;border-radius:999px;border:1px solid #33544A;background:#33544A;color:#FFFDFA;cursor:pointer}
+.dpc-btn:hover,.dpm-btn:hover,.dpc-open:hover{background:#2A453D;border-color:#2A453D}
+@media (max-width:560px){.dpc-in{padding:16px}.dpc-btns{flex:1 1 100%}.dpc-btn{flex:1 1 0;padding:12px 10px}.dpc-txt{font-size:15px}}
+
+/* Mapa de contacto: solo se carga con consentimiento */
+.dpm{min-height:260px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:22px 24px;text-align:center;background:#F2EEE7;font-size:15px;line-height:1.45;color:#5C554E}
+.dpm p{margin:0;max-width:34ch}
+.dpm-btn{min-height:44px;padding:10px 24px;font-size:15.5px}
+.dpm.dpm-on{padding:0;min-height:0;display:block}

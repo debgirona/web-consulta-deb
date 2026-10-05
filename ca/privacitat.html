@@ -10,9 +10,9 @@ html,body{height:100%;margin:0}#dc-root,#dc-root>.sc-host{height:100%}
 <meta name="description" content="Informació sobre el tractament de dades personals al lloc web i a la consulta de Deborah Beltran, psicòloga sanitària a Girona.">
 <meta name="robots" content="noindex, follow">
 <link rel="icon" href="../img/logo-256.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400&amp;family=Hanken+Grotesk:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<link rel="preload" href="../assets/fonts/hanken-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.css">
 <style>
 html { scroll-behavior: smooth; scroll-padding-top: 104px; }
   body { margin: 0; background: #FBF7F2; color: #2E2A26; font-family: "Hanken Grotesk", Helvetica, sans-serif; font-size: 17px; line-height: 1.6; text-wrap: pretty; -webkit-font-smoothing: antialiased; }
@@ -64,30 +64,36 @@ html { scroll-behavior: smooth; scroll-padding-top: 104px; }
 
   <article style="max-width: 760px; margin: 0px auto; padding: clamp(26px, 4vw, 44px) clamp(16px, 4vw, 40px) clamp(40px, 6vw, 72px);">
     <h1 style="font-family: Newsreader, Georgia, serif; font-weight: 300; font-size: clamp(30px, 4.6vw, 46px); line-height: 1.1; margin-bottom: 14px;">Política de privacitat</h1>
-    <p style="color: rgb(122, 114, 105); font-size: 15px; margin-bottom: 30px;">Última actualització: setembre de 2026.</p>
+    <p style="color: rgb(122, 114, 105); font-size: 15px; margin-bottom: 30px;">Última actualització: octubre de 2026.</p>
 
     <div style="display: flex; flex-direction: column; gap: 26px;">
       <section>
         <h2 style="font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: 24px; margin-bottom: 12px;">1. Responsable del tractament</h2>
-        <p style="color: rgb(69, 63, 57);">Deborah Beltran, psicòloga sanitària (núm. col. 35169), amb domicili professional al Carrer de la Sèquia, 3, Girona. Contacte: <a href="mailto:debgirona@gmail.com">debgirona@gmail.com</a> · <a href="tel:+34629179175">629 179 175</a>.</p>
+        <p style="color: rgb(69, 63, 57);">Deborah Beltran, psicòloga general sanitària, col·legiada núm. 35169 del Col·legi Oficial de Psicologia de Catalunya, amb domicili professional al Carrer de la Sèquia, 3, Girona. Contacte: <a href="mailto:debgirona@gmail.com">debgirona@gmail.com</a> · <a href="tel:+34629179175">629 179 175</a>.</p>
+        <p style="color: rgb(69, 63, 57); margin-top: 12px;">No s'ha designat delegat de protecció de dades perquè no és obligatori per a qui exerceix la professió sanitària a títol individual (article 34.1.l de la Llei orgànica 3/2018).</p>
       </section>
 
       <section>
-        <h2 style="font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: 24px; margin-bottom: 12px;">2. Quines dades es tracten i per a què</h2>
+        <h2 style="font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: 24px; margin-bottom: 12px;">2. Quines dades es tracten, per a què i amb quina base</h2>
         <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
           <li style="background: rgb(255, 253, 250); border: 1px solid rgb(237, 228, 217); border-radius: 16px; padding: 18px 20px;">
+            <p style="font-weight: 500;">Visites a la web</p>
+            <p style="color: rgb(92, 85, 78); font-size: 16px;">La web no té registre d'usuaris ni cookies pròpies d'analítica o publicitat. Està allotjada a GitHub Pages, el proveïdor de la qual pot registrar l'adreça IP de qui la visita per raons de seguretat i funcionament. Base jurídica: interès legítim a mantenir la web disponible i segura (article 6.1.f de l'RGPD).</p>
+          </li>
+          <li style="background: rgb(255, 253, 250); border: 1px solid rgb(237, 228, 217); border-radius: 16px; padding: 18px 20px;">
             <p style="font-weight: 500;">Consultes a través del formulari, correu o WhatsApp</p>
-            <p style="color: rgb(92, 85, 78); font-size: 16px;">Nom, correu, telèfon i el contingut del missatge, amb l'única finalitat de respondre la consulta i, si escau, concertar una cita. Base jurídica: consentiment de la persona interessada.</p>
+            <p style="color: rgb(92, 85, 78); font-size: 16px;">Nom, correu, telèfon si l'indiques i el contingut del missatge, amb l'única finalitat de respondre la consulta i, si escau, concertar una cita. El formulari no desa ni envia res a aquesta web: prepara un correu a la teva pròpia aplicació i ets tu qui l'envia. Base jurídica: el teu consentiment (article 6.1.a de l'RGPD), que és explícit respecte de les dades de salut que decideixis explicar (article 9.2.a). No cal que donis detalls.</p>
           </li>
           <li style="background: rgb(255, 253, 250); border: 1px solid rgb(237, 228, 217); border-radius: 16px; padding: 18px 20px;">
             <p style="font-weight: 500;">Història clínica de les persones en tractament</p>
-            <p style="color: rgb(92, 85, 78); font-size: 16px;">Dades identificatives i dades de salut necessàries per a la intervenció psicològica. Base jurídica: execució del contracte de serveis i compliment de les obligacions sanitàries legals. Aquestes dades es recullen en consulta, no a través de la web.</p>
+            <p style="color: rgb(92, 85, 78); font-size: 16px;">Dades identificatives i dades de salut necessàries per a la intervenció psicològica. Es recullen en consulta, mai a través de la web. Base jurídica: execució del contracte de serveis (article 6.1.b de l'RGPD), compliment de les obligacions legals sobre documentació clínica (article 6.1.c) i, per a les dades de salut, la prestació d'assistència sanitària per una professional subjecta a secret (article 9.2.h i 9.3).</p>
           </li>
           <li style="background: rgb(255, 253, 250); border: 1px solid rgb(237, 228, 217); border-radius: 16px; padding: 18px 20px;">
-            <p style="font-weight: 500;">Facturació</p>
-            <p style="color: rgb(92, 85, 78); font-size: 16px;">Dades fiscals necessàries per emetre factures. Base jurídica: obligació legal.</p>
+            <p style="font-weight: 500;">Gestió econòmica i obligacions fiscals</p>
+            <p style="color: rgb(92, 85, 78); font-size: 16px;">Dades identificatives i fiscals imprescindibles per documentar el cobrament de les sessions i complir les obligacions tributàries. Base jurídica: obligació legal (article 6.1.c de l'RGPD).</p>
           </li>
         </ul>
+        <p style="color: rgb(69, 63, 57); margin-top: 12px;">Facilitar les dades és voluntari, però sense elles no és possible respondre la teva consulta ni prestar el servei. No es prenen decisions automatitzades ni s'elaboren perfils.</p>
       </section>
 
       <section>
@@ -97,23 +103,42 @@ html { scroll-behavior: smooth; scroll-padding-top: 104px; }
 
       <section>
         <h2 style="font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: 24px; margin-bottom: 12px;">4. Terminis de conservació</h2>
-        <p style="color: rgb(69, 63, 57);">Les consultes informatives es conserven el temps necessari per atendre-les i fins a un any després. La documentació clínica es conserva durant els terminis que exigeix la normativa sanitària aplicable. Les dades de facturació, durant els terminis fiscals legals.</p>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
+          <li style="background: rgb(255, 253, 250); border: 1px solid rgb(237, 228, 217); border-radius: 16px; padding: 18px 20px;">
+            <p style="font-weight: 500;">Consultes informatives</p>
+            <p style="color: rgb(92, 85, 78); font-size: 16px;">El temps necessari per atendre-les i fins a un any després.</p>
+          </li>
+          <li style="background: rgb(255, 253, 250); border: 1px solid rgb(237, 228, 217); border-radius: 16px; padding: 18px 20px;">
+            <p style="font-weight: 500;">Documentació clínica</p>
+            <p style="color: rgb(92, 85, 78); font-size: 16px;">Com a mínim cinc anys des de la data d'alta de cada procés assistencial (article 17.1 de la Llei 41/2002) i quinze anys per als documents que assenyala l'article 12 de la Llei catalana 21/2000.</p>
+          </li>
+          <li style="background: rgb(255, 253, 250); border: 1px solid rgb(237, 228, 217); border-radius: 16px; padding: 18px 20px;">
+            <p style="font-weight: 500;">Dades econòmiques i fiscals</p>
+            <p style="color: rgb(92, 85, 78); font-size: 16px;">Quatre anys, que és el termini de prescripció tributària (article 66 de la Llei general tributària).</p>
+          </li>
+        </ul>
+        <p style="color: rgb(69, 63, 57); margin-top: 12px;">Un cop transcorreguts aquests terminis, les dades s'eliminen de manera segura.</p>
       </section>
 
       <section>
-        <h2 style="font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: 24px; margin-bottom: 12px;">5. Destinataris i encarregats</h2>
-        <p style="color: rgb(69, 63, 57);">No se cedeixen dades a tercers tret d'obligació legal. Hi poden accedir, com a encarregats del tractament i amb contracte de confidencialitat, els proveïdors de serveis necessaris per a l'activitat, com la plataforma de gestió de cites (Doctoralia), el correu electrònic i l'assessoria fiscal.</p>
-        <p style="color: rgb(69, 63, 57); margin-top: 12px;">Si contactes per WhatsApp, el tractament del missatge en aquesta plataforma es regeix per les condicions del seu titular.</p>
+        <h2 style="font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: 24px; margin-bottom: 12px;">5. Destinataris, proveïdors i transferències internacionals</h2>
+        <p style="color: rgb(69, 63, 57);">No se cedeixen dades a tercers tret d'obligació legal.</p>
+        <p style="color: rgb(69, 63, 57); margin-top: 12px;">Per a l'activitat es fan servir proveïdors que poden tenir accés a dades per compte de la responsable: el correu electrònic (Gmail, de Google), l'allotjament de la web (GitHub Pages, de GitHub, Inc.) i l'assessoria fiscal, que només accedeix a dades econòmiques.</p>
+        <p style="color: rgb(69, 63, 57); margin-top: 12px;">Google i GitHub poden tractar dades als Estats Units. Totes dues estan adherides al Marc de Privacitat de Dades UE-EUA, que la Comissió Europea considera adequat (Decisió d'Execució (UE) 2023/1795).</p>
+        <p style="color: rgb(69, 63, 57); margin-top: 12px;">Les cites es reserven a Doctoralia, una plataforma externa que és responsable de les dades que li facilitis en reservar, d'acord amb la seva pròpia política de privacitat. Doctoralia es fa servir únicament per gestionar les cites: no s'hi comparteix informació clínica ni altres dades personals de les persones ateses.</p>
+        <p style="color: rgb(69, 63, 57); margin-top: 12px;">Si contactes per WhatsApp, el missatge es tracta a més en aquesta plataforma, d'acord amb les condicions i la política de privacitat del seu titular, que preveuen transferències als Estats Units.</p>
       </section>
 
       <section>
         <h2 style="font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: 24px; margin-bottom: 12px;">6. Els teus drets</h2>
-        <p style="color: rgb(69, 63, 57);">Pots exercir els drets d'accés, rectificació, supressió, oposició, limitació del tractament i portabilitat escrivint a <a href="mailto:debgirona@gmail.com">debgirona@gmail.com</a>, acreditant la teva identitat. També pots retirar el consentiment en qualsevol moment i presentar una reclamació davant l'Agència Espanyola de Protecció de Dades (<a href="https://www.aepd.es" target="_blank" rel="noopener">aepd.es</a>).</p>
+        <p style="color: rgb(69, 63, 57);">Pots exercir els drets d'accés, rectificació, supressió, oposició, limitació del tractament i portabilitat escrivint a <a href="mailto:debgirona@gmail.com">debgirona@gmail.com</a>, acreditant la teva identitat. Rebràs resposta en el termini màxim d'un mes.</p>
+        <p style="color: rgb(69, 63, 57); margin-top: 12px;">També pots retirar el consentiment en qualsevol moment, sense que això afecti la licitud del tractament anterior, i presentar una reclamació davant l'Agència Espanyola de Protecció de Dades (<a href="https://www.aepd.es" target="_blank" rel="noopener">aepd.es</a>).</p>
       </section>
 
       <section>
         <h2 style="font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: 24px; margin-bottom: 12px;">7. Menors d'edat</h2>
-        <p style="color: rgb(69, 63, 57);">L'atenció a menors requereix el consentiment de qui tingui la pàtria potestat o la tutela, sens perjudici del dret del menor a ser escoltat segons el seu grau de maduresa.</p>
+        <p style="color: rgb(69, 63, 57);">L'atenció psicològica a menors requereix, com a regla general, el consentiment dels qui exerceixin la potestat parental o la tutela, sens perjudici del dret del menor a ser escoltat segons la seva edat i grau de maduresa.</p>
+        <p style="color: rgb(69, 63, 57); margin-top: 12px;">Si tens menys de 14 anys, no enviïs les teves dades a través d'aquesta web sense el permís dels teus progenitors o tutors (article 7 de la Llei orgànica 3/2018).</p>
       </section>
     </div>
 
@@ -179,6 +204,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 104px; }
           <a href="avis-legal" class="scp3" style="color: rgb(156, 148, 139); text-decoration: none;">Avís legal</a>
           <a href="privacitat" class="scp3" style="color: rgb(156, 148, 139); text-decoration: none;">Privacitat</a>
           <a href="cookies" class="scp3" style="color: rgb(156, 148, 139); text-decoration: none;">Cookies</a>
+          <a href="cookies" data-cookie-settings class="scp3" style="color: rgb(156, 148, 139); text-decoration: none;">Configuració de cookies</a>
         </nav>
       </div>
     </div>
@@ -188,5 +214,6 @@ html { scroll-behavior: smooth; scroll-padding-top: 104px; }
     <a href="https://www.doctoralia.es/deborah-beltran/psicologo/girona" target="_blank" rel="noopener" class="scp0" style="flex: 1 1 0%; text-align: center; background: rgb(51, 84, 74); color: rgb(255, 253, 250); text-decoration: none; font-size: 16.5px; font-weight: 500; padding: 15px 20px; border-radius: 999px; min-height: 48px;">Demanar cita</a>
     <a href="https://wa.me/34629179175" target="_blank" rel="noopener" aria-label="Escriure per WhatsApp" class="scp4" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 48px; min-height: 48px; border: 1px solid rgb(198, 188, 175); border-radius: 999px; color: rgb(51, 84, 74); text-decoration: none; font-size: 15px; padding: 0px 18px;">WhatsApp</a>
   </div></div></div></div></div>
+<script src="../assets/consent.js" data-policy="cookies" defer></script>
 </body>
 </html>

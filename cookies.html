@@ -10,9 +10,9 @@ html,body{height:100%;margin:0}#dc-root,#dc-root>.sc-host{height:100%}
 <meta name="description" content="Información sobre el uso de cookies en el sitio web de Deborah Psicología.">
 <meta name="robots" content="noindex, follow">
 <link rel="icon" href="img/logo-256.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400&amp;family=Hanken+Grotesk:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<link rel="preload" href="assets/fonts/hanken-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
 <style>
 html { scroll-behavior: smooth; scroll-padding-top: 104px; }
   body { margin: 0; background: #FBF7F2; color: #2E2A26; font-family: "Hanken Grotesk", Helvetica, sans-serif; font-size: 17px; line-height: 1.6; text-wrap: pretty; -webkit-font-smoothing: antialiased; }
@@ -64,25 +64,32 @@ html { scroll-behavior: smooth; scroll-padding-top: 104px; }
 
   <article style="max-width: 760px; margin: 0px auto; padding: clamp(26px, 4vw, 44px) clamp(16px, 4vw, 40px) clamp(40px, 6vw, 72px);">
     <h1 style="font-family: Newsreader, Georgia, serif; font-weight: 300; font-size: clamp(30px, 4.6vw, 46px); line-height: 1.1; margin-bottom: 14px;">Política de cookies</h1>
-    <p style="color: rgb(122, 114, 105); font-size: 15px; margin-bottom: 30px;">Última actualización: septiembre de 2026.</p>
+    <p style="color: rgb(122, 114, 105); font-size: 15px; margin-bottom: 30px;">Última actualización: octubre de 2026.</p>
 
     <div style="display: flex; flex-direction: column; gap: 26px;">
       <section>
         <h2 style="font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: 24px; margin-bottom: 12px;">1. Qué son las cookies</h2>
-        <p style="color: rgb(69, 63, 57);">Una cookie es un pequeño archivo que un sitio web guarda en tu dispositivo para recordar información sobre tu visita.</p>
+        <p style="color: rgb(69, 63, 57);">Una cookie es un pequeño archivo que un sitio web guarda en tu dispositivo para recordar información sobre tu visita. Existen tecnologías similares, como el almacenamiento local del navegador, a las que se aplican las mismas reglas.</p>
       </section>
 
       <section>
-        <h2 style="font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: 24px; margin-bottom: 12px;">2. Cookies que usa esta web</h2>
-        <p style="color: rgb(69, 63, 57); margin-bottom: 16px;">Este sitio no utiliza cookies propias de analítica, publicidad ni perfilado. Sí incorpora servicios de terceros que pueden instalar cookies cuando interactúas con ellos:</p>
+        <h2 style="font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: 24px; margin-bottom: 12px;">2. Qué usa esta web</h2>
         <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
           <li style="background: rgb(255, 253, 250); border: 1px solid rgb(237, 228, 217); border-radius: 16px; padding: 18px 20px;">
-            <p style="font-weight: 500;">Google Maps</p>
-            <p style="color: rgb(92, 85, 78); font-size: 16px;">Mapa incrustado en la página de contacto. Puede instalar cookies de Google al cargarse. Finalidad: mostrar la ubicación de la consulta.</p>
+            <p style="font-weight: 500;">Cookies propias</p>
+            <p style="color: rgb(92, 85, 78); font-size: 16px;">Ninguna. Esta web no usa cookies de analítica, publicidad ni perfilado.</p>
           </li>
           <li style="background: rgb(255, 253, 250); border: 1px solid rgb(237, 228, 217); border-radius: 16px; padding: 18px 20px;">
-            <p style="font-weight: 500;">Google Fonts</p>
-            <p style="color: rgb(92, 85, 78); font-size: 16px;">Carga de las tipografías del sitio desde los servidores de Google. Implica una conexión a un dominio de terceros.</p>
+            <p style="font-weight: 500;">Tu elección sobre cookies (técnica, no requiere consentimiento)</p>
+            <p style="color: rgb(92, 85, 78); font-size: 16px;">Para recordar si has aceptado o rechazado, se guarda en el almacenamiento local de tu navegador el dato «dp-cookies» durante un máximo de 12 meses. Es estrictamente necesario y no sale de tu dispositivo.</p>
+          </li>
+          <li style="background: rgb(255, 253, 250); border: 1px solid rgb(237, 228, 217); border-radius: 16px; padding: 18px 20px;">
+            <p style="font-weight: 500;">Google Maps (de terceros, requiere tu aceptación)</p>
+            <p style="color: rgb(92, 85, 78); font-size: 16px;">Mapa incrustado en la página de contacto, prestado por Google Ireland Limited. Finalidad: mostrar la ubicación de la consulta. Al cargarse, Google recibe tu dirección IP y puede instalar sus propias cookies, cuya duración fija Google. Solo se carga si aceptas las cookies o si pulsas «Ver mapa». Más información en la <a href="https://policies.google.com/technologies/cookies?hl=es" target="_blank" rel="noopener">política de cookies de Google</a>.</p>
+          </li>
+          <li style="background: rgb(255, 253, 250); border: 1px solid rgb(237, 228, 217); border-radius: 16px; padding: 18px 20px;">
+            <p style="font-weight: 500;">Tipografías</p>
+            <p style="color: rgb(92, 85, 78); font-size: 16px;">Están alojadas en la propia web. No hay conexión con Google Fonts ni con otros servidores externos.</p>
           </li>
           <li style="background: rgb(255, 253, 250); border: 1px solid rgb(237, 228, 217); border-radius: 16px; padding: 18px 20px;">
             <p style="font-weight: 500;">Enlaces salientes</p>
@@ -92,13 +99,16 @@ html { scroll-behavior: smooth; scroll-padding-top: 104px; }
       </section>
 
       <section>
-        <h2 style="font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: 24px; margin-bottom: 12px;">3. Cómo gestionarlas</h2>
-        <p style="color: rgb(69, 63, 57);">Puedes bloquear o eliminar las cookies desde la configuración de tu navegador. Ten en cuenta que, si bloqueas las de terceros, el mapa de la página de contacto puede no mostrarse.</p>
+        <h2 style="font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: 24px; margin-bottom: 12px;">3. Cómo aceptar, rechazar o cambiar tu elección</h2>
+        <p style="color: rgb(69, 63, 57);">La primera vez que entras aparece un aviso con dos opciones al mismo nivel: aceptar o rechazar. Rechazar no impide usar la web; solo deja el mapa sin cargar.</p>
+        <p style="color: rgb(69, 63, 57); margin-top: 12px;">Puedes cambiar tu elección en cualquier momento desde «Configuración de cookies», al pie de cada página, o con este botón:</p>
+        <p style="margin-top: 16px;"><button type="button" class="dpc-open" data-cookie-settings>Cambiar mi elección</button></p>
+        <p style="color: rgb(69, 63, 57); margin-top: 12px;">También puedes bloquear o eliminar las cookies desde la configuración de tu navegador.</p>
       </section>
 
       <section>
         <h2 style="font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: 24px; margin-bottom: 12px;">4. Cambios en esta política</h2>
-        <p style="color: rgb(69, 63, 57);">Si en el futuro se incorporan herramientas de analítica o de marketing, esta política se actualizará y se habilitará un banner de consentimiento previo.</p>
+        <p style="color: rgb(69, 63, 57);">Si en el futuro se incorporan herramientas de analítica o de marketing, se añadirán a esta política y al aviso de consentimiento antes de activarse, y se te volverá a pedir tu elección.</p>
       </section>
     </div>
 
@@ -164,6 +174,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 104px; }
           <a href="aviso-legal" class="scp3" style="color: rgb(156, 148, 139); text-decoration: none;">Aviso legal</a>
           <a href="privacidad" class="scp3" style="color: rgb(156, 148, 139); text-decoration: none;">Privacidad</a>
           <a href="cookies" class="scp3" style="color: rgb(156, 148, 139); text-decoration: none;">Cookies</a>
+          <a href="cookies" data-cookie-settings class="scp3" style="color: rgb(156, 148, 139); text-decoration: none;">Configuración de cookies</a>
         </nav>
       </div>
     </div>
@@ -173,5 +184,6 @@ html { scroll-behavior: smooth; scroll-padding-top: 104px; }
     <a href="https://www.doctoralia.es/deborah-beltran/psicologo/girona" target="_blank" rel="noopener" class="scp0" style="flex: 1 1 0%; text-align: center; background: rgb(51, 84, 74); color: rgb(255, 253, 250); text-decoration: none; font-size: 16.5px; font-weight: 500; padding: 15px 20px; border-radius: 999px; min-height: 48px;">Pedir cita</a>
     <a href="https://wa.me/34629179175" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp" class="scp4" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 48px; min-height: 48px; border: 1px solid rgb(198, 188, 175); border-radius: 999px; color: rgb(51, 84, 74); text-decoration: none; font-size: 15px; padding: 0px 18px;">WhatsApp</a>
   </div></div></div></div></div>
+<script src="assets/consent.js" data-policy="cookies" defer></script>
 </body>
 </html>

@@ -20,9 +20,9 @@ html,body{height:100%;margin:0}#dc-root,#dc-root>.sc-host{height:100%}
 <meta property="og:title" content="Contacto y reservas — Deborah Psicología, Girona">
 <meta property="og:image" content="https://deborahpsicologia.com/despacho.jpeg">
 <link rel="icon" href="img/logo-256.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&amp;family=Hanken+Grotesk:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="preload" href="assets/fonts/hanken-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
 <style>
 html { scroll-behavior: smooth; scroll-padding-top: 104px; -webkit-text-size-adjust: 100%; }
   body { margin: 0; background: #FBF7F2; color: #2E2A26; font-family: "Hanken Grotesk", "Helvetica Neue", Helvetica, sans-serif; font-size: 17px; line-height: 1.6; text-wrap: pretty; -webkit-font-smoothing: antialiased; }
@@ -152,7 +152,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 104px; -webkit-text-size-adj
         </div>
         <div style="display: flex; gap: 10px; align-items: flex-start;">
           <input id="rgpd" name="rgpd" type="checkbox" required="" style="margin-top: 5px; width: 18px; height: 18px; accent-color: rgb(51, 84, 74);">
-          <label for="rgpd" style="font-size: 14.5px; color: rgb(92, 85, 78);">He leído y acepto la <a href="privacidad">política de privacidad</a>. Mis datos se usarán únicamente para responder a esta consulta.</label>
+          <label for="rgpd" style="font-size: 14.5px; color: rgb(92, 85, 78);">Consiento que Deborah Beltran trate los datos de este mensaje, incluidos los de salud si los menciono, para responder a mi consulta. He leído la <a href="privacidad">política de privacidad</a>.</label>
         </div>
         <button type="submit" class="scp0" style="align-self: flex-start; background: rgb(51, 84, 74); color: rgb(255, 253, 250); border: none; font-family: inherit; font-size: 16.5px; font-weight: 500; padding: 15px 32px; border-radius: 999px; cursor: pointer; min-height: 48px;">Enviar consulta</button>
         <p style="font-size: 13.5px; color: rgb(122, 114, 105);">Al enviar se abrirá tu aplicación de correo con el mensaje preparado.</p>
@@ -165,7 +165,11 @@ html { scroll-behavior: smooth; scroll-padding-top: 104px; -webkit-text-size-adj
         <p style="font-family: Newsreader, Georgia, serif; font-size: 21px; line-height: 1.3; margin-bottom: 6px;">Carrer de la Sèquia, 3 — Girona</p>
         <p style="font-size: 15.5px; color: rgb(92, 85, 78);">Zona céntrica y tranquila, con un espacio discreto para hablar sin prisa.</p>
       </div>
-      <iframe title="Mapa de la consulta en Carrer de la Sèquia, 3, Girona" src="https://www.google.com/maps?q=Carrer%20de%20la%20S%C3%A8quia%203%2C%20Girona&amp;output=embed" width="600" height="260" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="width: 100%; height: 260px; border: 0px; display: block;"></iframe>
+      <div class="dpm" data-map data-title="Mapa de la consulta en Carrer de la Sèquia, 3, Girona" data-src="https://www.google.com/maps?q=Carrer%20de%20la%20S%C3%A8quia%203%2C%20Girona&amp;output=embed">
+        <p>El mapa es de Google Maps. Al cargarlo, Google recibe tu dirección IP y puede instalar cookies.</p>
+        <button type="button" class="dpm-btn" data-map-load>Ver mapa</button>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Carrer%20de%20la%20S%C3%A8quia%203%2C%20Girona" target="_blank" rel="noopener">Abrir en Google Maps</a>
+      </div>
     </div>
   </section></main><div class="sc-host"><div style="font-family: &quot;Hanken Grotesk&quot;, &quot;Helvetica Neue&quot;, Helvetica, sans-serif;">
   <section aria-labelledby="cta-pie" style="max-width: 1180px; margin: 0px auto; padding: clamp(50px, 8vw, 96px) clamp(16px, 4vw, 40px);">
@@ -225,6 +229,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 104px; -webkit-text-size-adj
           <a href="aviso-legal" class="scp5" style="color: rgb(156, 148, 139); text-decoration: none;">Aviso legal</a>
           <a href="privacidad" class="scp5" style="color: rgb(156, 148, 139); text-decoration: none;">Privacidad</a>
           <a href="cookies" class="scp5" style="color: rgb(156, 148, 139); text-decoration: none;">Cookies</a>
+          <a href="cookies" data-cookie-settings class="scp5" style="color: rgb(156, 148, 139); text-decoration: none;">Configuración de cookies</a>
         </nav>
       </div>
     </div>
@@ -246,5 +251,6 @@ html { scroll-behavior: smooth; scroll-padding-top: 104px; -webkit-text-size-adj
   });
 })();
 </script>
+<script src="assets/consent.js" data-policy="cookies" defer></script>
 </body>
 </html>

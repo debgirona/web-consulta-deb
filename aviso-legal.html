@@ -10,9 +10,9 @@ html,body{height:100%;margin:0}#dc-root,#dc-root>.sc-host{height:100%}
 <meta name="description" content="Aviso legal e información sobre la titularidad del sitio web de Deborah Psicología, psicóloga sanitaria en Girona.">
 <meta name="robots" content="noindex, follow">
 <link rel="icon" href="img/logo-256.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400&amp;family=Hanken+Grotesk:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<link rel="preload" href="assets/fonts/hanken-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
 <style>
 html { scroll-behavior: smooth; scroll-padding-top: 104px; }
   body { margin: 0; background: #FBF7F2; color: #2E2A26; font-family: "Hanken Grotesk", Helvetica, sans-serif; font-size: 17px; line-height: 1.6; text-wrap: pretty; -webkit-font-smoothing: antialiased; }
@@ -64,14 +64,16 @@ html { scroll-behavior: smooth; scroll-padding-top: 104px; }
 
   <article style="max-width: 760px; margin: 0px auto; padding: clamp(26px, 4vw, 44px) clamp(16px, 4vw, 40px) clamp(40px, 6vw, 72px);">
     <h1 style="font-family: Newsreader, Georgia, serif; font-weight: 300; font-size: clamp(30px, 4.6vw, 46px); line-height: 1.1; margin-bottom: 14px;">Aviso legal</h1>
-    <p style="color: rgb(122, 114, 105); font-size: 15px; margin-bottom: 30px;">Última actualización: septiembre de 2026.</p>
+    <p style="color: rgb(122, 114, 105); font-size: 15px; margin-bottom: 30px;">Última actualización: octubre de 2026.</p>
 
     <div style="display: flex; flex-direction: column; gap: 26px;">
       <section>
         <h2 style="font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: 24px; margin-bottom: 12px;">1. Titularidad del sitio web</h2>
         <dl style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; background: rgb(255, 253, 250); border: 1px solid rgb(237, 228, 217); border-radius: 18px; padding: 22px;">
           <div><dt style="font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: rgb(110, 156, 139); margin-bottom: 4px;">Titular</dt><dd>Deborah Beltran</dd></div>
-          <div><dt style="font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: rgb(110, 156, 139); margin-bottom: 4px;">Actividad</dt><dd>Psicóloga sanitaria, nº col. 35169</dd></div>
+          <div><dt style="font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: rgb(110, 156, 139); margin-bottom: 4px;">Actividad</dt><dd>Psicóloga general sanitaria</dd></div>
+          <div><dt style="font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: rgb(110, 156, 139); margin-bottom: 4px;">Colegio profesional</dt><dd>Col·legi Oficial de Psicologia de Catalunya (COPC), colegiada n.º 35169</dd></div>
+          <div><dt style="font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: rgb(110, 156, 139); margin-bottom: 4px;">Titulación</dt><dd>Grado en Psicología y Máster en Psicología General Sanitaria, títulos oficiales expedidos en España</dd></div>
           <div><dt style="font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: rgb(110, 156, 139); margin-bottom: 4px;">Domicilio</dt><dd>Carrer de la Sèquia, 3 — Girona</dd></div>
           <div><dt style="font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: rgb(110, 156, 139); margin-bottom: 4px;">Email</dt><dd><a href="mailto:debgirona@gmail.com">debgirona@gmail.com</a></dd></div>
           <div><dt style="font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: rgb(110, 156, 139); margin-bottom: 4px;">Teléfono</dt><dd><a href="tel:+34629179175">629 179 175</a></dd></div>
@@ -89,27 +91,33 @@ html { scroll-behavior: smooth; scroll-padding-top: 104px; }
         <h2 style="font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: 24px; margin-bottom: 12px;">3. Contenido divulgativo, no asistencial</h2>
         <p style="color: rgb(69, 63, 57);">Los artículos, las herramientas y los recursos publicados tienen carácter divulgativo. No constituyen una evaluación, un diagnóstico ni una intervención psicológica, y no sustituyen la atención profesional individualizada.</p>
         <p style="color: rgb(69, 63, 57); margin-top: 12px;">La relación terapéutica se establece únicamente mediante la contratación de sesiones, con el consentimiento informado correspondiente.</p>
-        <p style="color: rgb(69, 63, 57); margin-top: 12px;">Si te encuentras en una situación de urgencia o riesgo, contacta con el 112 o con el 024, línea de atención a la conducta suicida.</p>
+        <p style="color: rgb(69, 63, 57); margin-top: 12px;">Si te encuentras en una situación de urgencia o riesgo, contacta con el <strong>112</strong> o con el <strong>024</strong>, línea de atención a la conducta suicida.</p>
       </section>
 
       <section>
-        <h2 style="font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: 24px; margin-bottom: 12px;">4. Propiedad intelectual</h2>
+        <h2 style="font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: 24px; margin-bottom: 12px;">4. Precios</h2>
+        <p style="color: rgb(69, 63, 57);">Los precios por sesión que aparecen en esta web son finales. Los servicios de psicología sanitaria están exentos de IVA (artículo 20.Uno.3.º de la Ley 37/1992, del Impuesto sobre el Valor Añadido).</p>
+      </section>
+
+      <section>
+        <h2 style="font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: 24px; margin-bottom: 12px;">5. Propiedad intelectual</h2>
         <p style="color: rgb(69, 63, 57);">Los textos, las fotografías, el logotipo y el diseño del sitio son titularidad de Deborah Beltran o se utilizan con la autorización correspondiente. No se permite su reproducción, distribución o comunicación pública sin consentimiento previo por escrito.</p>
       </section>
 
       <section>
-        <h2 style="font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: 24px; margin-bottom: 12px;">5. Enlaces externos</h2>
+        <h2 style="font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: 24px; margin-bottom: 12px;">6. Enlaces externos</h2>
         <p style="color: rgb(69, 63, 57);">El sitio incluye enlaces a plataformas de terceros, como Doctoralia, Instagram, TikTok y Google Maps. La titular no se responsabiliza de sus contenidos ni de sus políticas de privacidad.</p>
       </section>
 
       <section>
-        <h2 style="font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: 24px; margin-bottom: 12px;">6. Legislación aplicable</h2>
-        <p style="color: rgb(69, 63, 57);">Este aviso legal se rige por la legislación española. Para cualquier controversia serán competentes los juzgados y tribunales de Girona, salvo que la normativa de consumo establezca otro fuero.</p>
+        <h2 style="font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: 24px; margin-bottom: 12px;">7. Colegio profesional y normas aplicables</h2>
+        <p style="color: rgb(69, 63, 57);">Deborah Beltran ejerce como psicóloga general sanitaria, colegiada n.º 35169 en el Col·legi Oficial de Psicologia de Catalunya (<a href="https://www.copc.cat" target="_blank" rel="noopener">copc.cat</a>).</p>
+        <p style="color: rgb(69, 63, 57); margin-top: 12px;">Su ejercicio está sujeto a los Estatutos y al Código Deontológico del Colegio, que pueden consultarse en la <a href="https://www.copc.cat/estatuts-codi-etic-i-codi-deontologic" target="_blank" rel="noopener">web del COPC</a>, a la Ley 44/2003, de ordenación de las profesiones sanitarias, y al deber de secreto profesional.</p>
       </section>
 
       <section>
-        <h2 style="font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: 24px; margin-bottom: 12px;">7. Colegio profesional</h2>
-        <p style="color: rgb(69, 63, 57);">Deborah Beltran ejerce como psicóloga sanitaria colegiada con el número 35169, sujeta al código deontológico de su colegio profesional y al deber de secreto profesional.</p>
+        <h2 style="font-family: Newsreader, Georgia, serif; font-weight: 400; font-size: 24px; margin-bottom: 12px;">8. Legislación aplicable</h2>
+        <p style="color: rgb(69, 63, 57);">Este aviso legal se rige por la legislación española. Para cualquier controversia serán competentes los juzgados y tribunales de Girona, salvo que la normativa de consumo establezca otro fuero.</p>
       </section>
     </div>
 
@@ -175,6 +183,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 104px; }
           <a href="aviso-legal" class="scp3" style="color: rgb(156, 148, 139); text-decoration: none;">Aviso legal</a>
           <a href="privacidad" class="scp3" style="color: rgb(156, 148, 139); text-decoration: none;">Privacidad</a>
           <a href="cookies" class="scp3" style="color: rgb(156, 148, 139); text-decoration: none;">Cookies</a>
+          <a href="cookies" data-cookie-settings class="scp3" style="color: rgb(156, 148, 139); text-decoration: none;">Configuración de cookies</a>
         </nav>
       </div>
     </div>
@@ -184,5 +193,6 @@ html { scroll-behavior: smooth; scroll-padding-top: 104px; }
     <a href="https://www.doctoralia.es/deborah-beltran/psicologo/girona" target="_blank" rel="noopener" class="scp0" style="flex: 1 1 0%; text-align: center; background: rgb(51, 84, 74); color: rgb(255, 253, 250); text-decoration: none; font-size: 16.5px; font-weight: 500; padding: 15px 20px; border-radius: 999px; min-height: 48px;">Pedir cita</a>
     <a href="https://wa.me/34629179175" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp" class="scp4" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 48px; min-height: 48px; border: 1px solid rgb(198, 188, 175); border-radius: 999px; color: rgb(51, 84, 74); text-decoration: none; font-size: 15px; padding: 0px 18px;">WhatsApp</a>
   </div></div></div></div></div>
+<script src="assets/consent.js" data-policy="cookies" defer></script>
 </body>
 </html>

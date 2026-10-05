@@ -34,9 +34,9 @@ html,body{height:100%;margin:0}#dc-root,#dc-root>.sc-host{height:100%}
 <meta property="og:url" content="https://deborahpsicologia.com/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="img/logo-256.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&amp;family=Hanken+Grotesk:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="preload" href="assets/fonts/hanken-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
 <style>
 html { scroll-behavior: smooth; scroll-padding-top: 104px; -webkit-text-size-adjust: 100%; }
   body { margin: 0; background: #FBF7F2; color: #2E2A26; font-family: "Hanken Grotesk", "Helvetica Neue", Helvetica, sans-serif; font-size: 17px; line-height: 1.6; text-wrap: pretty; -webkit-font-smoothing: antialiased; }
@@ -525,6 +525,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 104px; -webkit-text-size-adj
         <a href="aviso-legal" class="scpd" style="color: rgb(156, 148, 139); text-decoration: none;">Aviso legal</a>
         <a href="privacidad" class="scpd" style="color: rgb(156, 148, 139); text-decoration: none;">Privacidad</a>
         <a href="cookies" class="scpd" style="color: rgb(156, 148, 139); text-decoration: none;">Cookies</a>
+          <a href="cookies" data-cookie-settings class="scpd" style="color: rgb(156, 148, 139); text-decoration: none;">Configuración de cookies</a>
       </nav>
     </div>
   </div></footer>
@@ -532,16 +533,6 @@ html { scroll-behavior: smooth; scroll-padding-top: 104px; -webkit-text-size-adj
     <a href="https://www.doctoralia.es/deborah-beltran/psicologo/girona" target="_blank" rel="noopener" class="scp1" style="flex: 1 1 0%; text-align: center; background: rgb(51, 84, 74); color: rgb(255, 253, 250); text-decoration: none; font-size: 16.5px; font-weight: 500; padding: 15px 20px; border-radius: 999px; min-height: 48px;">Pedir cita</a>
     <a href="https://wa.me/34629179175" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp" class="scp3" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; min-width: 48px; min-height: 48px; border: 1px solid rgb(198, 188, 175); border-radius: 999px; color: rgb(51, 84, 74); text-decoration: none; font-size: 15px; padding: 0px 18px;">WhatsApp</a>
   </div></div></div>
-<script type="text/x-dc" data-dc-script="" data-props="{&quot;mostrarTestimonios&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Secciones&quot;},&quot;barraCitaMovil&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Conversión&quot;},&quot;mostrarSelectorIdioma&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Idiomas&quot;}}">
-class Component extends DCLogic {
-  renderVals() {
-    return {
-      mostrarTestimonios: this.props.mostrarTestimonios ?? true,
-      barraCitaMovil: this.props.barraCitaMovil ?? true,
-      mostrarSelectorIdioma: this.props.mostrarSelectorIdioma ?? true
-    };
-  }
-}
-</script>
+<script src="assets/consent.js" data-policy="cookies" defer></script>
 </body>
 </html>
